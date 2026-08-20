@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+
+    <h1>Demostración de Output en Javascript</h1>
+
+    <button id="btnAlerta">Mostrar Alerta</button>
+
+    <p id="miParrafo"></p>
+    <button id="btnTexto">Actualizar Texto</button>
+
+    <script>
+        console.log("La página se ha cargado correctamente.");
+
+        document.getElementById('btnAlerta').addEventListener('click', () => {
+            alert('Tu Nombre');
+        });
+
+        document.getElementById('btnTexto').addEventListener('click', () => {
+            document.getElementById('miParrafo').textContent = '¡Texto actualizado con Javascript!';
+        });
+    </script>
+
+</body>
+</html>
